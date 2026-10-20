@@ -1,0 +1,18 @@
+
+name: DeathpenaltyBan
+version: '1.0.0'
+main: id.server.deathpenaltyban.DeathpenaltyBan
+api-version: '1.21'
+description: Ban players for 15 minutes after death.
+
+commands:
+  penalty:
+    description: Manage death penalties
+    usage: /penalty <check|clear> <player>
+    permission: deathpenaltyban.admin
+
+permissions:
+  deathpenaltyban.admin:
+    description: Allows managing death bans
+    default: op
+    
